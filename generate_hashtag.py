@@ -1,3 +1,4 @@
+# takes any string and adds a # and removes spaces and capitalizes first word
 def generate_hashtag(s):
     if not s or len(s) > 140:
         return False

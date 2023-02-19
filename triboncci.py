@@ -1,3 +1,4 @@
+# takes a triple fibonacci and n and gives you that amount of trib nubmers
 def tribonacci(signature, n):
     if n == 0:
         return []

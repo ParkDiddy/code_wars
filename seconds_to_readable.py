@@ -1,3 +1,5 @@
+# takes amount of seconds and makes it readable
+# x years, x days, x hours, x minutes and x seconds
 def format_duration(sec):
     if sec == 0:
         return "now"

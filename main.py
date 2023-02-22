@@ -1,11 +1,11 @@
-def find_incorrect_value(tree):
-    for child in enumerate(tree):
-        left_child = i * 2 + 1
-        right_child = i * 2 + 2
+def move_zeros(lst):
+    zeros = []
+    for i in range(len(lst)-1, -1, -1):
+        if lst[i] == 0:
+            zeros.append(lst.pop(i))
+    lst.extend(zeros)
+    return lst
 
 
 
-print(find_incorrect_value([28, 13, 14, 6, 7, 5, 9]))
-# 9, 5, 7, 6, 14, 13, 28
-print(find_incorrect_value([27, 14, 14, 6, 7, 5, 9]))
-
+print(move_zeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]))
